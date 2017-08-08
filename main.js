@@ -13,8 +13,21 @@ button.addEventListener('click', function() {
           console.log('Looks like there was a problem. Status Code: ' + response.status);
           return;
         }
-        console.log('Got it!');
-        console.log(searchURL)
-      }
-    )
-})
+
+        response.json().then(function(data){
+          for (let i = 0; i < data.results.length; i++) {
+            let title = data.results[i].title;
+            let thumbnail = data.results[i].thumbnail;
+            let newBox = document.createElement('div');
+            newBox.setAttribute("class", "box");
+            let markup = `
+            <p>${title}</p>
+            <img src = ${thumbnail}>
+            `
+            newBox.innerHTML = markup
+            let box = document.querySelector(".results");
+            box.appendChild(newBox);
+          }
+        });
+      })
+});

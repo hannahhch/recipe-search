@@ -12,10 +12,11 @@ hr {
   margin: 3% 0;
 }
 
-.row-1, .row-2 {
+.results{
   display: flex;
   justify-content: center;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .box {
@@ -23,4 +24,6 @@ hr {
   height: 220px;
   width: 220px;
   margin: 10px;
+  padding: 5px;
+  text-align: center;
 }
