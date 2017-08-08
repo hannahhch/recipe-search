@@ -24,7 +24,7 @@ button.addEventListener('click', function() {
             let markup = `
             <p>${title}</p>
             <p><img src = ${thumbnail}></p>
-            <p><a href = ${link}>Click Me</a></p>
+            <p><a href = ${link}>Get the recipe</a></p>
             `
             newBox.innerHTML = markup
             let box = document.querySelector(".results");
