@@ -1,0 +1,26 @@
+.wrapper {
+  width: 80%;
+  margin: 5% 10%;
+}
+
+.search-recipe {
+  width: 250px;
+  height: 30px;
+}
+
+hr {
+  margin: 3% 0;
+}
+
+.row-1, .row-2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.box {
+  border: solid 1px black;
+  height: 250px;
+  width: 250px;
+  margin: 10px;
+}
