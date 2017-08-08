@@ -5,6 +5,7 @@ let searchName = 'http://recipepuppyproxy.herokuapp.com/api/?q=';
 button.addEventListener('click', function() {
   var searchBox = document.querySelector('.search-recipe').value;
   let searchURL = searchName + searchBox;
+  
   fetch(searchURL)
 
     .then(
