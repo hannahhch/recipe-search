@@ -18,11 +18,13 @@ button.addEventListener('click', function() {
           for (let i = 0; i < data.results.length; i++) {
             let title = data.results[i].title;
             let thumbnail = data.results[i].thumbnail;
+            let link = data.results[i].href;
             let newBox = document.createElement('div');
             newBox.setAttribute("class", "box");
             let markup = `
             <p>${title}</p>
-            <img src = ${thumbnail}>
+            <p><img src = ${thumbnail}></p>
+            <p><a href = ${link}>Click Me</a></p>
             `
             newBox.innerHTML = markup
             let box = document.querySelector(".results");
