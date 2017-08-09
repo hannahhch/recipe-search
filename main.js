@@ -1,11 +1,11 @@
 let button = document.querySelector('.search-button');
 
-let searchName = 'http://recipepuppyproxy.herokuapp.com/api/?q=';
+let searchName = 'http://recipepuppyproxy.herokuapp.com/api/?i=';
 
 button.addEventListener('click', function() {
   var searchBox = document.querySelector('.search-recipe').value;
   let searchURL = searchName + searchBox;
-  
+
   fetch(searchURL)
 
     .then(
@@ -16,6 +16,7 @@ button.addEventListener('click', function() {
         }
 
         response.json().then(function(data){
+          document.querySelector(".results").innerHTML = "";
           for (let i = 0; i < data.results.length; i++) {
             let title = data.results[i].title;
             let thumbnail = data.results[i].thumbnail;
