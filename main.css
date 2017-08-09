@@ -1,17 +1,43 @@
+a:hover {
+  color: #00747F;
+  font-weight: bold;
+}
+
+a {
+  color: black;
+}
+p {
+  font-weight: bold;
+  
+}
+
+p img {
+  width: 90px;
+  height: 90px;
+  border-radius: 2%;
+  margin: 5px 0;
+}
+
+
 .wrapper {
   width: 80%;
-  margin: 5% 10%;
+  height: 100%;
+  padding: 5% 10%;
 }
 
 .search {
   display: flex;
   justify-content: center;
   margin-bottom: 5%;
+
 }
 .search-recipe {
   width: 900px;
   height: 50px;
   float: left;
+  font-size: 1em;
+  font-family: 'Oxygen', sans-serif;
+  padding-left: 15px;
 }
 
 .search-button {
@@ -19,11 +45,14 @@
   height: 56px;
   width: 90px;
   font-size: 1em;
+  background-color: #00747F;
+  color: white;
+  font-family: 'Oxygen', sans-serif;
+  text-transform: uppercase;
+
 }
 
-hr {
-  margin: 3% 0;
-}
+
 
 .results{
   display: flex;
@@ -33,7 +62,7 @@ hr {
 }
 
 .box {
-  border: solid 1px black;
+  border: solid 3px #00747F;;
   height: 220px;
   width: 220px;
   margin: 10px;
@@ -58,4 +87,6 @@ body {
 -pie-background: linear-gradient(transparent 50%, rgba(200, 0, 0, .5) 50%, rgba(200, 0, 0, .5)) 0 0 / 50px 50px,
                  linear-gradient(90deg, transparent 50%, rgba(200, 0, 0, .5) 50%, rgba(200, 0, 0, .5)) 0 0 / 50px 50px white;
 behavior: url(/pie/PIE.htc);
+
+  margin: 0;
 }
