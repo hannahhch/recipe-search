@@ -5,15 +5,15 @@ a:hover {
 
 a {
   color: black;
+  padding-bottom: 5px;
 }
 p {
   font-weight: bold;
-  
+
 }
 
 p img {
-  width: 90px;
-  height: 90px;
+  height: 80px;
   border-radius: 2%;
   margin: 5px 0;
 }
